@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino Game Arcade</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #202124; /* Chrome dark mode background */
+            color: #e8eaed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            color: #9aa0a6;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+
+        /* The Frame Container */
+        .arcade-cabinet {
+            background: #2b2d30;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 2px solid #3c4043;
+        }
+
+        iframe {
+            width: 600px;
+            height: 220px;
+            border: none;
+            background-color: #fff; /* T-Rex game is natively light mode */
+            border-radius: 6px;
+        }
+
+        .instructions {
+            margin-top: 15px;
+            text-align: center;
+            color: #9aa0a6;
+            font-size: 13px;
+        }
+
+        kbd {
+            background: #3c4043;
+            border: 1px solid #5f6368;
+            border-radius: 4px;
+            padding: 2px 6px;
+            color: #fff;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Chrome Dino Arcade</h1>
+    <div class="subtitle">Click inside the window below to play!</div>
+
+    <div class="arcade-cabinet">
+        <iframe 
+            src="https://wayou.github.io/t-rex-runner/" 
+            scrolling="no">
+        </iframe>
+    </div>
+
+    <div class="instructions">
+        Press <kbd>Space</kbd> or <kbd>↑</kbd> to Jump. Press <kbd>↓</kbd> to Duck.
+    </div>
+
+</body>
+</html>
